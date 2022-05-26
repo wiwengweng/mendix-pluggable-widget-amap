@@ -14,6 +14,34 @@
 
 <body dir="ltr">
     <noscript>To use this application, please enable JavaScript.</noscript>
+    <!-- 单字签名 -->
+    <div id="single_dialog" style=" display:none;height:1000px;">
+
+        <div id="leftView">
+            <p id="anysign_title" style="padding-bottom: 20px;"></p>
+            <div style="position: relative;">
+                <div
+                    style="position: absolute; top:-10px; left: 30px; width: 100px; background: #fff; padding-left:20px; height:15px;">
+                    <img style="float: left;" width="15px" height="15px" src="image/bi.png" align="absmiddle"> 手写签名
+                </div>
+                <div id="single_signImage" class="signImagecss" style="overflow: hidden;"></div>
+            </div>
+        </div>
+
+
+        <div id="single_tmpcanvascss" class="single_tmpcanvascss">
+            <div id="single_signTitle"></div>
+            <canvas id="single_anysignCanvas"></canvas>
+        </div>
+
+        <div id="btnContainerInner" class="btncontainer">
+            <div id="btnOK" class="button_new">确 定</div>
+            <div id="btnCancel" class="button_new" style="float:right;">取 消</div>
+            <div id="btnClear" class="button_new" style="">清空</div>
+            <div id="btnBack" class="button_new" style="float:right;">后退</div>
+
+        </div>
+    </div>
     <div id="content"></div>
     <script>
         dojoConfig = {
