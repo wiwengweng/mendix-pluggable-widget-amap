@@ -6,6 +6,7 @@ export interface AMarker {
     title: string;
     lat: number;
     lng: number;
+    isActive: boolean;
 }
 
 interface RoiModeProps {
@@ -60,6 +61,8 @@ export default function RoiMode(props: RoiModeProps) {
                     visiable
                     title={mark.title}
                     position={new AMap.LngLat(mark.lng, mark.lat)}
+                    icon={mark.isActive?"https://webapi.amap.com/theme/v1.3/markers/b/mark_r.png":"https://webapi.amap.com/theme/v1.3/markers/b/mark_b.png"}
+                    offset={new AMap.Pixel(-19,-60)}
                 />
             ))}
         </Map>

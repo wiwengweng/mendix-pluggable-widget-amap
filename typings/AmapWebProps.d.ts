@@ -37,6 +37,7 @@ export interface AmapWebContainerProps {
     titleMarker?: ListAttributeValue<string>;
     lngMarker?: ListAttributeValue<Big>;
     latMarker?: ListAttributeValue<Big>;
+    isActive?: ListAttributeValue<boolean>;
     markerSelect?: ListActionValue;
     navMethod: NavMethodEnum;
     policy: PolicyEnum;
@@ -68,6 +69,7 @@ export interface AmapWebPreviewProps {
     titleMarker: string;
     lngMarker: string;
     latMarker: string;
+    isActive: string;
     markerSelect: {} | null;
     navMethod: NavMethodEnum;
     policy: PolicyEnum;

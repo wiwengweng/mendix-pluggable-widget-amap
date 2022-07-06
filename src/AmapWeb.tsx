@@ -70,7 +70,8 @@ export default function (props: AmapWebContainerProps) {
             return props.markers!.items!.map<AMarker>(item => ({
                 title: props.titleMarker!.get(item).value!,
                 lat: props.latMarker!.get(item).value!.toNumber(),
-                lng: props.lngMarker!.get(item).value!.toNumber()
+                lng: props.lngMarker!.get(item).value!.toNumber(),
+                isActive: props.isActive!.get(item).value!,
             }));
         } else {
             return [];

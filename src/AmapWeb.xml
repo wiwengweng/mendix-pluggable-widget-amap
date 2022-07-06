@@ -119,6 +119,14 @@
                         <attributeType name="Decimal" />
                     </attributeTypes>
                 </property>
+                <!--点击设置中心点-->
+                <property key="isActive" type="attribute" required="false" dataSource="markers">
+                    <caption>中心点标志位</caption>
+                    <description></description>
+                    <attributeTypes>
+                        <attributeType name="Boolean" />
+                    </attributeTypes>
+                </property>
             </propertyGroup>
             <propertyGroup caption="事件">
                 <property key="markerSelect" type="action" dataSource="markers">
